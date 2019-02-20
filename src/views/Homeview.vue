@@ -7,11 +7,10 @@
                 <label for="numCarou">Введите количество слайдов</label>
                 <input type="text" v-model="numCarousel" id="numCarou" @keydown.enter="loadParams" />
                 <br>
-                <p v-if="maxSlides">Превышено максимальное значение слайдов. Всего в коллекции {{lengSlides}} слайдов!</p>
+                <p class="red-text text-darken-2" v-if="maxSlides">Превышено максимальное значение слайдов. Всего в коллекции {{lengSlides}} слайдов!</p>
                 <button @click="loadParams" class="waves-effect waves-light btn">Инициализируйте слайдер</button>
                 <carousel :perPage="params.itemsPerPage">
                     <slide v-for="slide in slides" >
-                        <!--<span class="label">{{ slide.id }}</span>-->
                         <img class="slider-img" :src="slide.image" alt="" style='width: 100%; height: 100%'>
                     </slide>
                 </carousel>
