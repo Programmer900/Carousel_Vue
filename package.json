@@ -1,7 +1,7 @@
 {
-  "name": "vuejs-tutorials",
-  "description": "Vue.js проект",
-  "author": "Arhey <free.arhey@gmail.com>",
+  "name": "vuejs-carousel",
+  "description": "Vue.js каруселька",
+  "author": "Anton <ionizator231@ya.ru>",
   "private": true,
   "scripts": {
     "dev": "webpack-dev-server --inline --hot",
