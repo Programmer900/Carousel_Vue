@@ -21,7 +21,7 @@ module.exports = [
     id: 4,
     title: 'Новость 4',
     body: 'Lorem ipsum dolo adipisicing elit. Accusamus aperiam at ecati officiis possimus quidem, voluptatem.',
-    image: 'https://img-fotki.yandex.ru/get/9796/192430786.3a/0_fed0b_5b002438_orig'
+    image: 'https://img1.goodfon.ru/original/1920x1080/f/29/planety-zvezdy-kosmos-siyanie.jpg'
   },
   {
     id: 5,
