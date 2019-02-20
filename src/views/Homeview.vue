@@ -5,7 +5,7 @@
                 <h3 v-if="!params.isHideHeaderText">{{ params.headerText }}</h3>
                 <h3 v-else>{{ params.backupHeaderText }}</h3>
                 <label for="numCarou">Введите количество слайдов</label>
-                <input type="text" v-model="numCarousel" id="numCarou" @keydown.enter="loadParams" />
+                <input :class="[{error: maxSlides}]" type="text" v-model="numCarousel" id="numCarou" @keydown.enter="loadParams" />
                 <br>
                 <p class="red-text text-darken-2" v-if="maxSlides">Превышено максимальное значение слайдов. Всего в коллекции {{lengSlides}} слайдов!</p>
                 <button @click="loadParams" class="waves-effect waves-light btn">Инициализируйте слайдер</button>
@@ -73,11 +73,13 @@
         text-align: center;
         min-height: 100px;
     }
-
     .label {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+    }
+    input.error {
+        border-bottom: 2px solid red;
     }
 </style>
