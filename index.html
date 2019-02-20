@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>TZ Carousel</title>
+        <!-- Compiled and minified CSS -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+        <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+  	<div id="app">
+
+      
+      <header>
+
+          <nav class="blue-grey darken-3">
+              <div class="container">
+                  <div class="nav-wrapper">
+                      <router-link to="/" class="brand-logo center">Logo</router-link>
+                      <ul class="left hide-on-med-and-down">
+                          <li><router-link to="/">Главная</router-link></li>
+                          <li><router-link to="/about">О нас</router-link></li>
+
+                      </ul>
+
+                      <ul class="right hide-on-med-and-down">
+                          <li><router-link to="/news" active-class="grey">Новости</router-link></li>
+                      </ul>
+                  </div>
+              </div>
+
+          </nav>
+
+      </header>
+
+      <router-view></router-view>
+
+    </div>
+    <footer class="blue-grey darken-3">
+        <div class="container">
+            <div class="footer-wrap">
+                <div>Copyright</div>
+                <div>2019</div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="build/bundle.js"></script>
+
+  </body>
+</html>
